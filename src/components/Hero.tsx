@@ -10,7 +10,7 @@ export function Hero({ onScrollClick }: any) {
         <div className="bg-white w-32 h-1"></div>
         <div className="space-y-4">
           <h1 className="text-6xl  text-amber-50 font-mono ">
-            I`m Bilgehan, <span className="block mt-5">a Web Developer</span>
+            I`m Bilgehan, <span className="block mt-5">a Web Developer...</span>
           </h1>
           <p className="text-md  font-mono">
             I build modern, fast, and user-friendly web experiences using
