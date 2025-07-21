@@ -17,7 +17,7 @@ export function Hero({ onScrollClick }: any) {
             Next.js,
             <span className="block mt-2">
               React, and Tailwind CSS. I care deeply about clean code and
-              elegant design.
+              elegant design..
             </span>
           </p>
         </div>
