@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+@tailwind utilities;
+
+
+@import "@fontsource/playfair-display";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --about-color: #0b1a21;
+
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);  
+  --font-playfair: 'Playfair Display', serif;
+  --font-poppins: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a2a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+background: #1C1F26;
+  color: #E0E6F1;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.about-bg {
+  background-color: var(--about-color);
+}
+
+.font-poppins {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+
