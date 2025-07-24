@@ -12,7 +12,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --about-color: #0b1a21;
+  --second-color: #0b1a21;
 
 
 }
@@ -39,8 +39,12 @@ background: #1C1F26;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-.about-bg {
-  background-color: var(--about-color);
+.second-bg {
+  background-color: var(--second-color);
+}
+ 
+.default-bg {
+  background-color:  #1C1F26
 }
 
 .font-poppins {
