@@ -13,10 +13,10 @@ export default function PortfolioCard({
     <div className="group rounded-2xl  bg-gray-800 transition-all duration-500 hover:scale-105 overflow-hidden space-y-5 cursor-pointer">
       <div className="px-10 py-5">
         <div className="flex justify-end gap-2">
-          <button className="bg-gray-200 p-2 rounded-2xl text-xs text-emerald-700 font-semibold">
+          <button className="bg-gray-200 p-2 rounded-2xl text-xs text-gray-700  font-semibold">
             {primaryButton}
           </button>
-          <button className="bg-gray-200 p-2 rounded-2xl text-xs text-emerald-700 font-semibold">
+          <button className="bg-gray-200 p-2 rounded-2xl text-xs text-gray-700 font-semibold">
             {secondaryButton}
           </button>
         </div>
