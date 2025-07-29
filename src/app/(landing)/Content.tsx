@@ -6,6 +6,7 @@ import { Hero } from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import MySkills from "@/components/MySkills";
 import MyPortfolio from "@/components/MyPortfolio";
+import Footer from "@/components/Footer";
 
 export default function Content() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -19,6 +20,7 @@ export default function Content() {
   return (
     <>
       <Hero onScrollClick={scrollToAbout} />
+
       <div ref={aboutRef}>
         <AboutMe />
       </div>
@@ -28,6 +30,8 @@ export default function Content() {
       <MyPortfolio />
 
       <Contact />
+
+      <Footer />
     </>
   );
 }

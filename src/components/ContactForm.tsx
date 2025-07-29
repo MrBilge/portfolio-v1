@@ -86,13 +86,15 @@ export default function ContactForm() {
         />
       </div>
       <div className="flex space-x-5">
-        <div className="group flex space-x-2 p-2 transition-all duration-00 hover:border-b-white border-gray-600 w-max border-b-2 mt-5 ">
+        <div className="group flex space-x-2 p-2 d mt-5 ">
           <button
             type="submit"
             className="flex items-center text-2xl cursor-pointer"
           >
-            Contact me
-            <ArrowRightIcon className="w-8 transition-all duration-300 group-hover:ml-2 ml-1" />
+            <p className="border-b border-gray-500 transition-all duration-300 group-hover:border-white">
+              Contact me
+            </p>
+            <ArrowRightIcon className="w-8 transition-all duration-300 group-hover:ml-4 ml-2" />
           </button>
         </div>
         {loading && (

@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import PortfolioCard from "./PortfolioCard";
 
 export default function MyPortfolio() {
@@ -11,12 +12,17 @@ export default function MyPortfolio() {
           <h2 className="text-2xl">
             <span className="text-amber-300 text-2xl">//</span> My portfolio
           </h2>
-          <h1 className="text-4xl">
+          <h1 className="text-4xl font-semibold">
             Take a look at the latest projects I’ve done
           </h1>
 
-          <div className="w-max border-b border-b-cyan-200">
-            <p>Browse all projects</p>
+          <div className="group flex space-x-2">
+            <p className="border-b border-gray-500 font-semibold text-lg  transition-all duration-300 hover:border-white cursor-pointer">
+              Browse all projects
+            </p>
+            <span>
+              <ArrowRightIcon className="w-6 h-6 transition-all duration-300 group-hover:ml-2" />
+            </span>
           </div>
           <div className="mt-40">
             <PortfolioCard

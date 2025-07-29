@@ -33,6 +33,23 @@
   }
 }
 
+@layer utilities {
+  @keyframes bounce-large {
+    0%, 100% {
+      transform: translateY(-70%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(70%);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  .animate-bounce-large {
+    animation: bounce-large 1.5s infinite;
+  }
+}
+
 body {
 background: #1C1F26;
   color: #E0E6F1;
@@ -54,5 +71,4 @@ background: #1C1F26;
 .font-playfair {
   font-family: 'Playfair Display', serif;
 }
-
 
