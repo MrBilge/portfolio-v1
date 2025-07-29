@@ -11,7 +11,7 @@ export default function PortfolioCard({
 }: any) {
   return (
     <div className="group rounded-2xl  bg-gray-800 transition-all duration-500 hover:scale-105 overflow-hidden space-y-5 cursor-pointer">
-      <div className="px-10 py-5">
+      <div className="px-5 xl:px-10 py-5">
         <div className="flex justify-end gap-2">
           <button className="bg-gray-200 p-2 rounded-2xl text-xs text-gray-700  font-semibold">
             {primaryButton}
@@ -21,9 +21,9 @@ export default function PortfolioCard({
           </button>
         </div>
         <div className="space-y-2">
-          <p className="text-4xl font-semibold">{title} </p>
+          <p className="lg:text-xl xl:text-4xl font-semibold">{title} </p>
           <div>
-            <p className="font-serif">{description}</p>
+            <p className=" lg: text-sm font-serif">{description}</p>
           </div>
         </div>
       </div>

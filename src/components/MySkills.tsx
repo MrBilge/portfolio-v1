@@ -67,7 +67,7 @@ export default function MySkills() {
 
   const handleScroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
-      const scrollAmount = 300;
+      const scrollAmount = 250;
       scrollRef.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -110,7 +110,7 @@ export default function MySkills() {
         >
           {MySkills.map((item, index) => (
             <div
-              className="shrink-0 w-[300px]  space-y-5 py-20 px-5 bg-gray-800 rounded-2xl"
+              className="shrink-0 w-[250px]  space-y-5 py-20 px-5 bg-gray-800 rounded-2xl"
               key={index}
             >
               {item.icon}

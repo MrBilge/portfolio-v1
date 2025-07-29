@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 export default function AboutMe() {
   return (
-    <div className="h-dvh -mt-30 flex justify-between items-center second-bg  px-0 lg:px-40  ">
+    <div className=" h-dvh -mt-30 flex justify-between items-center second-bg   sm:px-20 lg:px-40  ">
       <div className="flex flex-col space-y-5 w-1/2">
         <h3 className="text-2xl text-amber-50 ">
           <span className="text-amber-300 text-3xl">//</span> About Me
@@ -24,7 +24,7 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col space-y-2 w-1/3">
+      <div className="flex flex-col space-y-2 sm:w-1/2 md:w-1/3">
         <div className="flex justify-between ">
           <div className="flex space-x-2">
             <p className="text-6xl">3 </p>

@@ -55,12 +55,12 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col space-y-10">
+    <form onSubmit={handleSubmit} className=" flex flex-col space-y-10">
       <div className="transition-all duration-300 hover:border-white border-b border-gray-500">
         <input
           required
           type="text"
-          className="w-full pb-10 placeholder:text-2xl placeholder:text-white outline-none text-2xl "
+          className="w-full pb-10 lg:placeholder:text-lg xl:placeholder:text-2xl placeholder:text-white outline-none text-lg xl:text-2xl "
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Enter your name"
@@ -70,7 +70,7 @@ export default function ContactForm() {
         <input
           required
           type="e-mail"
-          className="w-full pb-10 placeholder:text-2xl placeholder:text-white outline-none text-2xl "
+          className="w-full pb-10 lg:placeholder:text-lg xl:placeholder:text-2xl placeholder:text-white outline-none  "
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Your email address"
@@ -79,7 +79,7 @@ export default function ContactForm() {
       <div className="transition-all duration-300 hover:border-white border-b border-gray-500">
         <textarea
           required
-          className=" resize-none w-full pb-10 placeholder:text-2xl placeholder:text-white outline-none text-2xl "
+          className=" resize-none w-full pb-10 lg:placeholder:text-lg xl:placeholder:text-2xl placeholder:text-white outline-none"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder=" Describe your project"
@@ -89,7 +89,7 @@ export default function ContactForm() {
         <div className="group flex space-x-2 p-2 d mt-5 ">
           <button
             type="submit"
-            className="flex items-center text-2xl cursor-pointer"
+            className="flex items-center lg:placeholder:text-lg xl:placeholder:text-2xl cursor-pointer"
           >
             <p className="border-b border-gray-500 transition-all duration-300 group-hover:border-white">
               Contact me

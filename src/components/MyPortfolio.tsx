@@ -3,11 +3,8 @@ import PortfolioCard from "./PortfolioCard";
 
 export default function MyPortfolio() {
   return (
-    <div
-      style={{ height: "180vh" }}
-      className="w-full flex justify-center items-center gap-5 second-bg  px-30"
-    >
-      <div className="w-full flex gap-32 justify-between px-30 ">
+    <div className="w-full h-max flex justify-center items-center gap-5 second-bg py-20  lg:px-30">
+      <div className="w-full flex md:flex-col md:justify-center items-center lg:flex-row gap-20 xl:gap-32 justify-between xl:px-30 ">
         <div className="space-y-5 w-1/2 ">
           <h2 className="text-2xl">
             <span className="text-amber-300 text-2xl">//</span> My portfolio
@@ -16,7 +13,7 @@ export default function MyPortfolio() {
             Take a look at the latest projects I’ve done
           </h1>
 
-          <div className="group flex space-x-2">
+          <div className="group flex w-max space-x-2">
             <p className="border-b border-gray-500 font-semibold text-lg  transition-all duration-300 hover:border-white cursor-pointer">
               Browse all projects
             </p>
