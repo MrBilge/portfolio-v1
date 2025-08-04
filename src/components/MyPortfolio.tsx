@@ -7,7 +7,7 @@ export default function MyPortfolio() {
       <div className="w-full flex md:flex-col md:justify-center items-center lg:flex-row gap-20 xl:gap-32 justify-between xl:px-30 ">
         <div className="space-y-5 w-1/2 ">
           <h2 className="text-2xl">
-            <span className="text-amber-300 text-2xl">//</span> My portfolio
+            <span className="text-amber-300 text-2xl">{`//`}</span> My portfolio
           </h2>
           <h1 className="text-4xl font-semibold">
             Take a look at the latest projects I’ve done

@@ -1,7 +1,11 @@
 import { ChevronDownIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 import { Facebook, Instagram, Github, Youtube, Linkedin } from "lucide-react";
 
-export function Hero({ onScrollClick }: any) {
+type HeroProps = {
+  onScrollClick: () => void;
+};
+
+export function Hero({ onScrollClick }: HeroProps) {
   return (
     <div className="flex h-screen w-full justify-between bg-[url('/assets/bilge.png')] bg-no-repeat px-20 xl:py-10  bg-center ">
       <div className="flex flex-col gap-10 w-1/2 mt-20 space-y-5">

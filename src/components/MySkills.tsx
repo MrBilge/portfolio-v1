@@ -1,64 +1,85 @@
 "use client";
-import { ArrowRightIcon, ArrowLeftIcon } from "lucide-react";
 import { useRef } from "react";
+import { ArrowRightIcon, ArrowLeftIcon } from "lucide-react";
+import Image from "next/image";
 
 export default function MySkills() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const MySkills = [
     {
-      icon: <img src="/assets/html5.png" alt="html5" className="w-20 h-20" />,
+      icon: (
+        <Image width={20} height={20} src="/assets/html5.png" alt="html5" />
+      ),
       name: "HTML & CSS",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: <img src="/assets/js.png" alt="html5" className="w-20 h-20" />,
+      icon: (
+        <Image
+          width={20}
+          height={20}
+          src="/assets/js.png"
+          alt="html5"
+          className="w-20 h-20"
+        />
+      ),
       name: "Javascript",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: <img src="/assets/react.png" alt="html5" className="w-20 h-20" />,
+      icon: (
+        <Image width={20} height={20} src="/assets/react.png" alt="html5" />
+      ),
       name: "React",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: <img src="/assets/nextjs.png" alt="html5" className="w-20 h-20" />,
+      icon: (
+        <Image width={20} height={20} src="/assets/nextjs.png" alt="html5" />
+      ),
       name: "Next Js",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
 
     {
       icon: (
-        <img src="/assets/tailwind.png" alt="html5" className="w-20 h-20" />
+        <Image width={20} height={20} src="/assets/tailwind.png" alt="html5" />
       ),
       name: "Tailwind CSS",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: <img src="/assets/expo.png" alt="html5" className="w-20 h-20" />,
+      icon: <Image width={20} height={20} src="/assets/expo.png" alt="html5" />,
       name: "React Native Expo",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
 
     {
-      icon: <img src="/assets/figma.png" alt="html5" className="w-14 h-20" />,
+      icon: (
+        <Image width={20} height={20} src="/assets/figma.png" alt="html5" />
+      ),
       name: "Figma",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: <img src="/assets/react.png" alt="html5" className="w-20 h-20" />,
+      icon: (
+        <Image width={20} height={20} src="/assets/react.png" alt="html5" />
+      ),
       name: "React",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: <img src="/assets/nextjs.png" alt="html5" className="w-20 h-20" />,
+      icon: (
+        <Image width={20} height={20} src="/assets/nextjs.png" alt="html5" />
+      ),
       name: "Next Js",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
 
     {
       icon: (
-        <img src="/assets/tailwind.png" alt="html5" className="w-20 h-20" />
+        <Image width={20} height={20} src="/assets/tailwind.png" alt="html5" />
       ),
       name: "Tailwind CSS",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
@@ -77,9 +98,9 @@ export default function MySkills() {
 
   return (
     <div className="flex h-screen w-full  justify-center items-center px-20 ">
-      <div className="flex flex-col space-y-5 w-full  ">
+      <div className="flex flex-col space-y-5 w-full">
         <h3 className="text-2xl text-amber-50">
-          <span className="text-4xl text-blue-600">//</span> My Skills
+          <span className="text-4xl text-blue-600">{`//`}</span> My Skills
         </h3>
 
         <div className="flex justify-between w-1/2 ">

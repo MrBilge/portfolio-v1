@@ -1,4 +1,6 @@
-export const AddContact = async (payload: any) => {
+import { ContactPayload } from "@/app/types/contact";
+
+export const AddContact = async (payload: ContactPayload) => {
   const res = await fetch("/api/contact", {
     method: "POST",
     headers: {

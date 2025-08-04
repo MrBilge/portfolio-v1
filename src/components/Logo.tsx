@@ -1,7 +1,8 @@
+import Image from "next/image";
 export default function Logo() {
   return (
     <div className="flex space-x-5">
-      <img src="/assets/html-logo.png" className="w-20 h-24" />
+      <Image alt="logo" width={20} height={24} src="/assets/html-logo.png" />
 
       <div className="flex  justify-center items-center">
         <h1 className=" font-serif"> Front End - Mobile Dev </h1>

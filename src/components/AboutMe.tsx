@@ -4,7 +4,7 @@ export default function AboutMe() {
     <div className=" h-dvh -mt-30 flex justify-between items-center second-bg   sm:px-20 lg:px-40  ">
       <div className="flex flex-col space-y-5 w-1/2">
         <h3 className="text-2xl text-amber-50 ">
-          <span className="text-amber-300 text-3xl">//</span> About Me
+          <span className="text-amber-300 text-3xl">{`//`}</span> About Me
         </h3>
         <div className="flex flex-col space-y-5">
           <h1 className="text-4xl font-semibold ">
