@@ -7,29 +7,49 @@ import AboutMe from "@/components/AboutMe";
 import MySkills from "@/components/MySkills";
 import MyPortfolio from "@/components/MyPortfolio";
 import Footer from "@/components/Footer";
+import Topbar from "@/components/Topbar";
 
 export default function Content() {
   const aboutRef = useRef<HTMLDivElement>(null);
+  const portfolioRef = useRef<HTMLDivElement>(null);
+  const mySkillsRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
-  const scrollToAbout = () => {
-    aboutRef.current?.scrollIntoView({
+  const scroll = (ref: any) => {
+    ref.current?.scrollIntoView({
       behavior: "smooth",
     });
   };
 
   return (
     <>
-      <Hero onScrollClick={scrollToAbout} />
+      <Topbar
+        refs={{
+          aboutRef,
+          portfolioRef,
+          mySkillsRef,
+          contactRef,
+        }}
+        onScrollClick={scroll}
+      />
+
+      <Hero onScrollClick={() => scroll(aboutRef)} />
 
       <div ref={aboutRef}>
         <AboutMe />
       </div>
 
-      <MySkills />
+      <div ref={mySkillsRef}>
+        <MySkills />
+      </div>
 
-      <MyPortfolio />
+      <div ref={portfolioRef}>
+        <MyPortfolio />
+      </div>
 
-      <Contact />
+      <div ref={contactRef}>
+        <Contact />
+      </div>
 
       <Footer />
     </>

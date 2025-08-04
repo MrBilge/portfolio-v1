@@ -18,7 +18,7 @@ export default function Footer() {
                 A. Bilgehan Eybek
               </h1>
               <h2 className="lg:text-lg text-gray-600 font-semibold">
-                Software dev. at MEB
+                Software dev. at M.E.B
               </h2>
               <div className="flex mt-2 w-max space-x-3 group">
                 <Facebook className="w-6 h-6 transition-all duration-300 group-hover:opacity-40 hover:opacity-100 hover:scale-110 hover:translate-y-1 cursor-pointer" />

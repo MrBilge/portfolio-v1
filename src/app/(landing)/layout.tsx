@@ -6,8 +6,6 @@ export default function layout({ children }: { children: React.ReactNode }) {
     <>
       <Toaster />
       <div className="flex flex-col w-full h-dvh overflow-y-hidden">
-        <Topbar />
-
         <main
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           className="w-full h-dvh overflow-y-auto"

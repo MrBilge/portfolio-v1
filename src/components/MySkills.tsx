@@ -1,85 +1,64 @@
 "use client";
-import { useRef } from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "lucide-react";
-import Image from "next/image";
+import { useRef } from "react";
 
 export default function MySkills() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const MySkills = [
     {
-      icon: (
-        <Image width={20} height={20} src="/assets/html5.png" alt="html5" />
-      ),
+      icon: <img src="/assets/html5.png" alt="html5" className="w-20 h-20" />,
       name: "HTML & CSS",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: (
-        <Image
-          width={20}
-          height={20}
-          src="/assets/js.png"
-          alt="html5"
-          className="w-20 h-20"
-        />
-      ),
+      icon: <img src="/assets/js.png" alt="html5" className="w-20 h-20" />,
       name: "Javascript",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: (
-        <Image width={20} height={20} src="/assets/react.png" alt="html5" />
-      ),
+      icon: <img src="/assets/react.png" alt="html5" className="w-20 h-20" />,
       name: "React",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: (
-        <Image width={20} height={20} src="/assets/nextjs.png" alt="html5" />
-      ),
+      icon: <img src="/assets/nextjs.png" alt="html5" className="w-20 h-20" />,
       name: "Next Js",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
 
     {
       icon: (
-        <Image width={20} height={20} src="/assets/tailwind.png" alt="html5" />
+        <img src="/assets/tailwind.png" alt="html5" className="w-20 h-20" />
       ),
       name: "Tailwind CSS",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: <Image width={20} height={20} src="/assets/expo.png" alt="html5" />,
+      icon: <img src="/assets/expo.png" alt="html5" className="w-20 h-20" />,
       name: "React Native Expo",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
 
     {
-      icon: (
-        <Image width={20} height={20} src="/assets/figma.png" alt="html5" />
-      ),
+      icon: <img src="/assets/figma.png" alt="html5" className="w-14 h-20" />,
       name: "Figma",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: (
-        <Image width={20} height={20} src="/assets/react.png" alt="html5" />
-      ),
+      icon: <img src="/assets/react.png" alt="html5" className="w-20 h-20" />,
       name: "React",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
     {
-      icon: (
-        <Image width={20} height={20} src="/assets/nextjs.png" alt="html5" />
-      ),
+      icon: <img src="/assets/nextjs.png" alt="html5" className="w-20 h-20" />,
       name: "Next Js",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
     },
 
     {
       icon: (
-        <Image width={20} height={20} src="/assets/tailwind.png" alt="html5" />
+        <img src="/assets/tailwind.png" alt="html5" className="w-20 h-20" />
       ),
       name: "Tailwind CSS",
       description: "Duis aute irure dolor in reprehenderit in voluptate.",
@@ -97,14 +76,15 @@ export default function MySkills() {
   };
 
   return (
-    <div className="flex h-screen w-full  justify-center items-center px-20 ">
-      <div className="flex flex-col space-y-5 w-full">
-        <h3 className="text-2xl text-amber-50">
-          <span className="text-4xl text-blue-600">{`//`}</span> My Skills
+    <div className="flex h-screen w-full  justify-center items-center px-5 lg:px-20 ">
+      <div className="flex flex-col space-y-5 w-full  ">
+        <h3 className="text-xl text-amber-50">
+          <span className="text-3xl lg:text-4xl text-blue-600">//</span> My
+          Skills
         </h3>
 
-        <div className="flex justify-between w-1/2 ">
-          <h1 className="text-4xl font-semibold flex justify-center items-center">
+        <div className="lg:flex space-y-5 justify-between md:w-1/2 ">
+          <h1 className="text-2xl lg:text-4xl font-semibold flex items-center ">
             My extensive list of skills
           </h1>
 

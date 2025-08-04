@@ -1,13 +1,10 @@
-import Image from "next/image";
-
-export default function Avatar() {
+export default function () {
   return (
-    <div className="relative w-24 h-25 lg:w-40 lg:h-40 rounded-full overflow-hidden bg-gray-600">
-      <Image
-        fill
+    <div className="w-24 h-25 lg:w-40 lg:h-40 rounded-full overflow-hidden bg-gray-600">
+      <img
         src="/assets/bilge.png"
         alt="myprofile"
-        className="object-cover"
+        className="w-full h-full object-cover"
       />
     </div>
   );
