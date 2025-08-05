@@ -1,4 +1,6 @@
-import { portfoliaCardProps } from "./types/portfolia";
+import { portfoliaCardProps } from "../app/types/portfolia";
+import Image from "next/image";
+
 export default function PortfolioCard({
   title,
   description,
@@ -31,47 +33,65 @@ export default function PortfolioCard({
 
       {mobileCard ? (
         <div className="flex flex-row  gap-4 px-4 pb-6 transition-all duration-300 group-hover:scale-105 skew-x-10">
-          <div className="w-1/2 aspect-[3/2] overflow-hidden">
-            <img
+          <div className="w-1/2  overflow-hidden">
+            <Image
               src={subImage1}
-              className="w-full h-full rounded-xl bg-gray-200 object-cover"
-            />
-          </div>
-          <div className="w-1/3 aspect-[3/2] overflow-hidden">
-            <img
-              src={subImage2}
-              className="w-full h-full rounded-xl bg-gray-200 object-cover"
+              alt={title}
+              width={500}
+              height={300}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div className="w-1/3  overflow-hidden">
-            <img
+            <Image
+              src={subImage2}
+              alt={title}
+              width={500}
+              height={300}
+              className="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+          <div className="w-1/3   overflow-hidden">
+            <Image
               src={mainImage}
-              className="w-full h-full rounded-xl bg-gray-200 object-cover"
+              alt={title}
+              width={500}
+              height={300}
+              className="w-full h-full  object-cover rounded-xl"
             />
           </div>
         </div>
       ) : (
-        <div className="flex justify-center transition-all duration-300 group-hover:scale-110">
-          <div className="flex flex-col gap-7 lg:gap-2 skew-x-10 w-full  md:w-1/2">
+        <div className="flex  transition-all duration-300 group-hover:scale-110">
+          <div className="flex flex-col   skew-x-10 w-full  md:w-1/2">
             <div className="w-full aspect-[3/2] overflow-hidden -ml-5">
-              <img
+              <Image
                 src={subImage1}
-                className="w-full h-full rounded-xl bg-gray-200"
+                alt={title}
+                width={500}
+                height={500}
+                className="w-full h-auto bg-gray-200 object-cover rounded-xl"
               />
             </div>
             <div className="w-full aspect-[3/2] overflow-hidden -ml-5">
-              <img
+              <Image
                 src={subImage2}
-                className="w-full h-full rounded-xl bg-gray-200"
+                alt={title}
+                width={500}
+                height={400}
+                className="w-full h-auto bg-gray-200 object-cover rounded-xl"
               />
             </div>
           </div>
           <div
-            className={`skew-x-10 w-full md:${mainView} aspect-[3/2] overflow-hidden -mr-10`}
+            className={`skew-x-10 w-full md:${mainView} aspect-[3/4] overflow-hidden -mr-10`}
           >
-            <img
+            <Image
               src={mainImage}
-              className="w-full h-full  rounded-xl bg-gray-200"
+              alt={title}
+              width={500}
+              height={300}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
         </div>

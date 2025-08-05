@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
-    <div className="w-full h-dvh flex justify-center items-center p-5">
+    <div className="w-full h-dvh flex justify-center items-center p-5 lg:px-20">
       <div className="w-full space-y-20 lg:flex gap-5 ">
         <div className="lg:w-1/2">
           <div className="hidden lg:block border-t-4 gap-10 border-t-white p-4 w-24 lg:w-48"></div>

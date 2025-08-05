@@ -7,17 +7,15 @@ export default function Footer() {
   return (
     <div className="w-full h-max flex justify-center md:items-center second-bg md:px-0 lg:px-10 border-t border-gray-600">
       <div className="w-full p-10 gap-15 md:gap-20 lg:gap-0 flex flex-col-reverse   md:flex-row justify-center lg:justify-between     ">
-        <div className="lg:w-1/3 flex justify-center items-end   space-x-5 ">
+        <div className="lg:w-1/3 flex justify-center items-center   space-x-5 ">
           <div>
             <Avatar />
           </div>
 
           <div className=" flex  flex-col justify-center">
             <div className="space-y-2 ">
-              <h1 className="lg:text-2xl font-serif tracking-widest">
-                A. Bilgehan Eybek
-              </h1>
-              <h2 className="lg:text-lg text-gray-600 font-semibold">
+              <h1 className="font-serif tracking-widest">A. Bilgehan Eybek</h1>
+              <h2 className=" text-gray-600 font-semibold">
                 Software dev. at M.E.B
               </h2>
               <div className="flex mt-2 w-max space-x-3 group">

@@ -8,6 +8,7 @@ import MySkills from "@/components/MySkills";
 import MyPortfolio from "@/components/MyPortfolio";
 import Footer from "@/components/Footer";
 import Topbar from "@/components/Topbar";
+import AnimateView from "@/components/AnimateView";
 
 export default function Content() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -36,19 +37,27 @@ export default function Content() {
       <Hero onScrollClick={() => scroll(aboutRef)} />
 
       <div ref={aboutRef}>
-        <AboutMe />
+        <AnimateView>
+          <AboutMe />
+        </AnimateView>
       </div>
 
       <div ref={mySkillsRef}>
-        <MySkills />
+        <AnimateView>
+          <MySkills />
+        </AnimateView>
       </div>
 
       <div ref={portfolioRef}>
-        <MyPortfolio />
+        <AnimateView>
+          <MyPortfolio />
+        </AnimateView>
       </div>
 
       <div ref={contactRef}>
-        <Contact />
+        <AnimateView>
+          <Contact />
+        </AnimateView>
       </div>
 
       <Footer />

@@ -1,4 +1,4 @@
-import { contactProps } from "@/components/types/contact";
+import { contactProps } from "@/app/types/contact";
 
 export const AddContact = async (payload: contactProps) => {
   const res = await fetch("/api/contact", {
