@@ -1,6 +1,5 @@
 "use client";
-
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { toast } from "sonner";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { AddContact } from "@/app/api/contact/action";
@@ -10,7 +9,7 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -35,20 +34,22 @@ export default function ContactForm() {
     try {
       const res = await AddContact(payload);
 
-      toast("Contact Established.", {
-        description: "You will be contacted as soon as possible.",
-        style: {
-          backgroundColor: "#16a34a",
-          color: "white",
-          border: "1px solid #15803d",
-          fontWeight: "600",
-        },
-      });
+      if (res) {
+        toast("Contact Established.", {
+          description: "You will be contacted as soon as possible.",
+          style: {
+            backgroundColor: "#16a34a",
+            color: "white",
+            border: "1px solid #15803d",
+            fontWeight: "600",
+          },
+        });
 
-      setName("");
-      setEmail("");
-      setMessage("");
-      setLoading(false);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setLoading(false);
+      }
     } catch (error) {
       console.error(error);
     }

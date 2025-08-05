@@ -15,7 +15,7 @@ export default function Content() {
   const mySkillsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
-  const scroll = (ref: any) => {
+  const scroll = (ref: React.RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({
       behavior: "smooth",
     });

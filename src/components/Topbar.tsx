@@ -1,20 +1,16 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
-import Logo from "./Logo";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
-import { X, Menu } from "lucide-react";
-import HamburgerButton from "./HamburgerButton";
-import { motion, AnimatePresence } from "framer-motion";
 
-export default function Topbar({ onScrollClick, refs }: any) {
+import { useState } from "react";
+import { X, Menu } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import Logo from "./Logo";
+
+type TopbarProps = {
+  onScrollClick: (ref: React.RefObject<HTMLDivElement | null>) => void;
+  refs: Record<string, React.RefObject<HTMLDivElement | null>>;
+};
+
+export default function Topbar({ onScrollClick, refs }: TopbarProps) {
   const menuItem = [
     {
       name: "About",
@@ -55,7 +51,7 @@ export default function Topbar({ onScrollClick, refs }: any) {
   );
 }
 
-function MobileFullMenu({ onScrollClick, refs }: any) {
+function MobileFullMenu({ onScrollClick, refs }: TopbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItem = [

@@ -79,7 +79,7 @@ export default function MySkills() {
     <div className="flex h-screen w-full  justify-center items-center px-5 lg:px-20 ">
       <div className="flex flex-col space-y-5 w-full  ">
         <h3 className="text-xl text-amber-50">
-          <span className="text-3xl lg:text-4xl text-blue-600">//</span> My
+          <span className="text-3xl lg:text-4xl text-blue-600">{`//`}</span> My
           Skills
         </h3>
 

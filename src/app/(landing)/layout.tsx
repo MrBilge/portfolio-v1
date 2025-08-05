@@ -1,6 +1,5 @@
 import { Toaster } from "@/components/ui/sonner";
 
-import Topbar from "@/components/Topbar";
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <>

@@ -1,3 +1,4 @@
+import { portfoliaCardProps } from "./types/portfolia";
 export default function PortfolioCard({
   title,
   description,
@@ -8,7 +9,7 @@ export default function PortfolioCard({
   subImage1,
   subImage2,
   mobileCard,
-}: any) {
+}: portfoliaCardProps) {
   return (
     <div className="group rounded-2xl  bg-gray-800 transition-all duration-500 lg:hover:scale-105 overflow-hidden space-y-5 cursor-pointer">
       <div className="px-5 xl:px-10 py-5">
